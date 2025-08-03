@@ -286,9 +286,18 @@ section{
 }
 
 .about-pic{
-    width: 450px; /* or any size you prefer */
-    height: 450px;
+    margin-top: 2rem;
     object-fit: cover;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.profile-pic{
+    object-fit: cover;
+    margin-bottom: 2rem;
+    height: 250px;
+    width: 250px;
     border-radius: 50%;
 }
 
