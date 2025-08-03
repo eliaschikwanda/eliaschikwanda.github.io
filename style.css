@@ -286,8 +286,8 @@ section{
 }
 
 .about-pic{
-    width: 200px; /* or any size you prefer */
-    height: 200px;
+    width: 450px; /* or any size you prefer */
+    height: 450px;
     object-fit: cover;
     border-radius: 50%;
 }
