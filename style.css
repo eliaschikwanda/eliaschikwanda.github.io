@@ -108,7 +108,15 @@ body {
     text-align: center;
     font-size: 14px;
     color: #666;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.sidebar-middle {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
     line-height: 1.4;
 }
 
