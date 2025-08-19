@@ -3,366 +3,243 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elias Chikwanda - Portfolio</title>
-    <link rel=" stylesheet" href="style.css"/>
-    <link rel=" stylesheet" href="mediaqueries.css"/>
-    
+    <title>Elias Chikwanda</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav id="desktop-nav">
-        <div class = "logo">Elias Chikwanda</div>
-        <div>
-            <ul class = "nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <!-- Fixed Header -->
+    <header class="main-header">
+        <div class="header-content">
+            <h1>Elias Chikwanda</h1>
+            <nav class="header-nav">
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
+                <a href="#coursework">Coursework</a>
+                <a href="assets/2025.7_elias_chikwanda_resume.pdf">Resume</a>
+            </nav>
         </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Elias Chikwanda</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
+    </header>
+
+    <!-- Fixed Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-content">
+            <div class="profile-photo">
+                <img src="assets/elias_chikwanda_prof_pic.png" alt="Elias Chikwanda" />
             </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
-    </nav>
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/about-pic.png" alt="My profile picture" class="profile-pic"/>
-        </div>
-        <div class="section__text">
-            <p class="section__text_p1">Hi, I'm</p>
-            <h1 class="title">Elias Chikwanda</h1>
-            <p class="section__text__p2">Software Developer</p>
-            <div class="btn_container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/2025.7_elias_chikwanda_resume.pdf')">
-                    Download CV
-                </button>
-                <button class="btn btn-color-1" onclick="location.href('./#contact')"> Contact me
-                </button>
-            </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" 
-                alt="Developer's LinkedIn Profile"
-                class="icon" 
-                onclick="location.href='https://www.linkedin.com/in/eliaschikwanda/'"/>
-
-                <img src="./assets/github.png" 
-                alt="Developer's Github Profile"
-                class="icon" 
-                onclick="location.href='https://github.com/eliaschikwanda'"/>
-            </div>
-        </div>
-    </section>
-    <section id="about">
-        
-        <h1 class="title">About me</h1>
-        <p class="section__text__p1">Get to learn more about Elias Chikwanda</p>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img
-                    src="./assets/about-pic.png"
-                    alt="Profile picture"
-                    class="about-pic"/>
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-
-                    <div class="details-container">
-                        <img src="./assets/education.png"
-                        alt="Education icon"
-                        class="icon"/>
-                        <h3>Education</h3>
-                        <h4>Stanford University</h4><br/> 
-                        <p>B.Sc. Electrical Engineering and Computer Science</p>
-                    </div>
-
-                    <div class="details-container">
-                        <img src="./assets/experience.png"
-                        alt="Experience icon"
-                        class="icon"/>
-                        <h3>Experience</h3>
-                        <p>2+ years <br/>Software Development and Hardware Engineering</p>
-                    </div>
-
-            </div>
-            <div class="text-container">
-            </br>
-                <p>Experienced with software development via intern roles, R&D projects, coursework and personal projects. <br> Familiar with several tech stacks including Python stacks.
-                <br> Developing knowledge of MERN, ASP.NET, and Ruby on Rails stacks.
-            <br> Proven track record in project completion and client satisfaction.</p>
-            </div>
-        </div>
-    </div>
-    <img src="./assets/arrow.png"
-    alt="Arrow icon"
-    class="icon arrow"
-    onclick="location.href='./#experience'">
-    </section>
-    <section id="experience">
-        
-        <h1 class="title">Experience</h1>
-        <p class="section__text__p1">Explore with Elias Chikwanda</p>
-        <div class="experience-details-container">
-            <div class="about-containers">
-
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Software Development</h2>
-                    <div class="article-container">
-
-                        <article>
-                            <img src="./assets/checkmark.png"
-                            alt="Experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Python</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        
-
-                        <article>
-                            <img src="./assets/checkmark.png"
-                            alt="Experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>C/C++</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-  
-
-                        <article>
-                            <img src="./assets/checkmark.png"
-                            alt="Experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Java</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-
-                        <article>
-                            <img src="./assets/checkmark.png"
-                            alt="Experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-
-                        <article>
-                            <img src="./assets/checkmark.png"
-                            alt="Experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-
-                        <article>
-                            <img src="./assets/checkmark.png"
-                            alt="Experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-
-                        <article>
-                            <img src="./assets/checkmark.png"
-                            alt="Experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Assembly (with RISC-V and MIPS)</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-
-                        <article>
-                            <img src="./assets/checkmark.png"
-                            alt="Experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Django</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-
-                    </div>
-                </div>
-
-
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Backend Development</h2>
-                    <div class="article-container">
-
-                        <article>
-                            <img src="./assets/checkmark.png"
-                            alt="Experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>SQL</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        
-
-                        <article>
-                            <img src="./assets/checkmark.png"
-                            alt="Experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Django</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-
-   
-
-                        <article>
-                            <img src="./assets/checkmark.png"
-                            alt="Experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Git version control</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-   
-
-                        <article>
-                            <img src="./assets/checkmark.png"
-                            alt="Experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Linux systems</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-   
-
-                        <article>
-                            <img src="./assets/checkmark.png"
-                            alt="Experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Unix systems</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        
-                        <article>
-                            <img src="./assets/checkmark.png"
-                            alt="Experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Quality Assurance testing</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-
-             
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <img src="./assets/arrow.png"
-    alt="Arrow icon"
-    class="icon arrow"
-    onclick="location.href='./#projects'">
-    </section>
-    <section id="projects">
-        
-        <!-- <h1 class="title">Projects</h1>
-        <p class="section__text__p1">Browse my projects</p>
-        <div class="experience-details-container">
-            <div class="about-containers">
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assets/terra1.png"
-                        alt="Web Development with Terrascope"
-                        class="project-img"/>
-                </div>
-                <h2 class="experience-sub-title project-title">Web Development</h2>
-                <div class="btn-container">
-                    
-                    <button class="btn btn-color-2 project-btn"
-                    onclick="location.href='https://terrascope2027.wpenginepowered.com/'">Project Demo</button>
-                    
-                </div>
-            </div> -->
-          </div>
-        </div>
-
-    <img src="./assets/arrow.png"
-    alt="Arrow icon"
-    class="icon arrow"
-    onclick="location.href='./#projects'">    
-
-    </section>
-    <section id="contact">
-        <h1 class="title"> Contact</h1>
-        <p class="section__text__p1">Get in touch with Elias!</p>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email.png"
-                alt="Email icon"
-                class="icon contact-icon email-icon" />
-                <p><a href="mailto:chikwandaelias@gmail.com">chikwandaelias@gmail.com</a></p>
-            </div>
-
+            <h2>Elias Chikwanda</h2>
+            <p class="sidebar-title">BS in Electrical Engineering and Computer Science</p>
             
-                <div class="contact-info-container">
-                    <img src="./assets/linkedin.png"
-                    alt="Email icon"
-                    class="icon contact-icon"/>
-                    <p><a href="https://linkedin.com/in/eliaschikwanda">Elias Chikwanda</a></p>
-                </div>
-        </div>
-    </section>
-    <footer>
-        <nav>
-            <div class="nav-links-cointainer">
-                <ul class = "nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+            <div class="sidebar-location">
+                📍 Stanford, CA<br>
+                🎓 Stanford University (EE CS '27)
             </div>
-        </nav>
-        <p>Copyright &#169; 2025 Elias Chikwanda. All rights reserved.</p>
-    </footer>
-    <script src="script.js"></script>
+            
+            <div class="sidebar-links">
+                <a href="mailto:eliaschi@stanford.edu">
+                    <img src="assets/email.png" alt="Email"> Email
+                </a>
+                <a href="https://linkedin.com/in/eliaschikwanda/" target="_blank">
+                    <img src="assets/linkedin.png" alt="LinkedIn"> LinkedIn
+                </a>
+                <a href="https://github.com/eliaschikwanda" target="_blank">
+                    <img src="assets/github.png" alt="GitHub"> GitHub
+                </a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="intro-section">
+            <div class="tagline">
+                <p>Career Interests: <em> Systems Software Engineering, Hardware Engineering, Machine Learning</em></p>
+            </div>
+            
+            <p>
+                I am a Stanford University student pursuing a BS in Electrical Engineering and Computer Science, 
+                expected to graduate in June 2027. My passion lies at the intersection of hardware and software engineering, 
+                from developing low-level system drivers to building full-stack web applications.
+            </p>
+            
+            <p>
+                My experience spans system development, embedded programming, web application development, and hardware design. 
+                I believe in creating robust, efficient solutions whether working with RISC-V assembly or modern web frameworks, 
+                always striving to bridge theoretical knowledge with practical applications.
+            </p>
+        </div>
+
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            
+            <div class="project">
+                <div class="project-title">PiiLearn</div>
+                <div class="project-meta">Full-Stack Web Application • 2024 - Present</div>
+                <div class="project-tech">Spring Boot, Angular, PrimeNG, PostgreSQL, JWT, OpenAPI, Docker</div>
+                <p>
+                    Developed a secure, responsive full-stack web application enabling 500+ students to attempt 175+ 
+                    Cambridge multiple-choice past papers online with automated grading and progress tracking. 
+                    Achieved a 30% improvement in exam preparation efficiency through intuitive UI/UX design and 
+                    robust backend architecture with JWT authentication and comprehensive API documentation.
+                </p>
+                <div class="project-links">
+                    <a href="https://github.com/eliaschikwanda/piilearn-web-frontend" target="_blank">GitHub</a>
+                    <!-- <a href="#" target="_blank">Live Demo</a> -->
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-title">Grow Your Own Mango - Embedded Systems Project</div>
+                <div class="project-meta">Systems & Hardware Engineering • 2024</div>
+                <div class="project-tech">C, Assembly, Mango Pi (RISC-V), SPI, UART, I2C, BME280</div>
+                <p>
+                    Engineered 12 core system modules including gpio.c, timer.c, and malloc.c, enabling precise control 
+                    of Pi's peripherals and optimizing memory management. Designed and implemented a complete weather 
+                    station and automated drip irrigation system integrating BME280 sensor for environmental monitoring 
+                    and real-time soil moisture control, resulting in improved system performance and reliability.
+                </p>
+                <div class="project-links">
+                    <a href="#" target="_blank">Code Available on Request</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-title">Enhanced Music Synthesizer</div>
+                <div class="project-meta">Digital Logic Design & FPGA • 2024</div>
+                <div class="project-tech">Verilog, FPGA (PYNQ), Vivado</div>
+                <p>
+                    Designed and implemented an FPGA-based music player with four integrated extensions: chords, harmonics, 
+                    dynamics, and note display. Leveraged combinational/sequential logic, pipelining, and timing optimization 
+                    to produce multi-note audio with visual feedback. Engineered custom Verilog modules for parallel waveform 
+                    generation, harmonic synthesis via frequency scaling, and ADSR amplitude modulation.
+                </p>
+                <div class="project-links">
+                    <!-- <a href="#" target="_blank">Code Available on Request</a> -->
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-title">CarbonInsight - Carbon Market Analysis</div>
+                <div class="project-meta">Stanford TreeHacks Hackathon • Feb 2024 (1st Place Winner Sustainability Track)</div>
+                <div class="project-tech">Reflex (Python), NumPy, SciPy, CSS</div>
+                <p>
+                    Developed an interactive dashboard using Reflex and CSS, visualizing carbon offset supply and demand 
+                    predictions to improve user understanding of decarbonization strategies. Modeled multi-year equilibrium 
+                    of carbon markets using NumPy and SciPy, enabling company-specific net-zero pathways. Won 1st place 
+                    in the Sustainability Track at Stanford's hackathon.
+                </p>
+                <div class="project-links">
+                    <a href="https://devpost.com/software/carbon-price-curves" target="_blank">DevPost</a>
+                    <a href="https://github.com/lfun1/carbon-price-curves" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <h2>Experience</h2>
+            
+            <div class="experience-entry">
+                <div class="experience-title">Stanford CURIS Fellow - System Development Intern</div>
+                <div class="experience-meta">Stanford University • June 2025 - August 2025</div>
+                <p>
+                    Developed, tested, and documented a modular I2C driver module and student-friendly API for the Mango Pi (RISC-V), 
+                    enabling seamless peripheral integration for 40+ Stanford students each academic quarter with 90% reliability. 
+                    Implemented and optimized the SD card MMC protocol including mmc_bwrite and mmc_bread functions with FATFS 
+                    filesystem integration. Collaborated with CS107e faculty on cross-functional syllabus development for RISC-V transition.
+                </p>
+            </div>
+
+            <div class="experience-entry">
+                <div class="experience-title">Student Technical Support Specialist</div>
+                <div class="experience-meta">Stanford Learning Technologies & Spaces • April 2024 - July 2025</div>
+                <p>
+                    Resolved 250+ technical issues including Wi-Fi connectivity, OS reinstallation, device encryption, and network 
+                    troubleshooting, maintaining 95%+ student satisfaction. Maintained and updated technical documentation in 
+                    Confluence for emerging technologies and campus network infrastructure, creating knowledge base resources 
+                    that reduced resolution time by 30% for common issues.
+                </p>
+            </div>
+
+            <div class="experience-entry">
+                <div class="experience-title">Software Engineering Intern</div>
+                <div class="experience-meta">Econet Wireless • Harare, ZW • June 2024 - August 2024</div>
+                <p>
+                    Automated end-to-end UI/UX testing pipelines using Selenium, Cypress, and TestNG, reducing regression testing 
+                    time by 80% and accelerating release cycles across 5 production systems. Developed robust API test suites 
+                    and reporting tools, improving backend service reliability and test coverage. Engineered scalable backend 
+                    API endpoints for EcoChat, enhancing microservice communication across internal platforms.
+                </p>
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <h2>Education</h2>
+            
+            <div class="experience-entry">
+                <div class="experience-title">Bachelor of Science in Electrical Engineering and Computer Science</div>
+                <div class="experience-meta">Stanford University • Expected June 2027</div>
+                <p>
+                    Pursuing a comprehensive program that bridges hardware and software engineering, 
+                    with coursework spanning digital systems, computer architecture, software development, 
+                    and mathematical foundations.
+                </p>
+            </div>
+        </section>
+
+        <section id="coursework" class="section">
+            <h2>Relevant Coursework</h2>
+            
+            <h3>Electrical Engineering</h3>
+            <p>
+                <strong>EE108</strong> - Digital System Design<br>
+                <strong>EE101A</strong> - Circuits I<br>
+                <strong>EE102A</strong> - Signal and Systems I<br>
+                <strong>EE180</strong> - Digital Systems Architecture<br>
+                <strong>EE65</strong> - Modern Physics for Engineers<br>
+                <strong>EE101B</strong> - Circuits II
+            </p>
+
+            <h3>Computer Science</h3>
+            <p>
+                <strong>CS106B</strong> - Programming Abstractions<br>
+                <strong>CS107E</strong> - Computer Systems from the Ground Up<br>
+                <strong>CS103</strong> - Mathematical Foundations of Computing<br>
+                <strong>CS111</strong> - Operating Systems Principles<br>
+                <strong>CS109</strong> - Introduction to Probability for Computer Scientists
+            </p>
+
+            <h3>Mathematics</h3>
+            <p>
+                <strong>Math 51</strong> - Linear Algebra, Multivariable Calculus, and Modern Applications<br>
+                <strong>Math 53</strong> - Differential Equations with Linear Algebra, Fourier Methods, and Modern Applications<br>
+                <strong>Math 104</strong> - Applied Matrix Theory
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>Technical Skills</h2>
+            <p>
+                <strong>Programming Languages:</strong> C/C++, Java, Python, TypeScript, JavaScript, SQL, Assembly (MIPS, RISC-V), Verilog, HTML, CSS<br>
+                <strong>Software Frameworks:</strong> Spring Boot, Django, Angular, React.js, Node.js, Next.js, Selenium, Cypress<br>
+                <strong>Hardware Engineering:</strong> MMC, I2C, SPI, USB, UART, PCB (layout and design), FPGA (PYNQ), Vivado<br>
+                <strong>EE Tools:</strong> LTSpice, Spectrum Analyzer, Oscilloscopes, Circuit Debugging via FPGA<br>
+                <strong>Databases/Protocols/Tools:</strong> PostgreSQL, MySQL, Git, AWS, Linux, Docker, GitActions<br>
+                <strong>Data Science/ML:</strong> Scikit-Learn, Keras, TensorFlow, NumPy, SciPy, Pandas, Matplotlib
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>Awards & Activities</h2>
+            <p>
+                <strong>Awards:</strong> 1st Place TreeHacks (Stanford Hackathon - Sustainability Track), Exceptional Achievement Award (Academic)<br>
+                <strong>Leadership/Activities:</strong> Senior Program Coordinator (Stanford Student Learning Support), Computer Security Research Assistant, ColorStack Community, CodePath
+            </p>
+        </section>
+        
+        <footer class="footer">
+            <p>© 2025 Elias Chikwanda. Built with HTML, CSS, and hosted on GitHub Pages.</p>
+            <p><a href="https://github.com/eliaschikwanda/eliaschikwanda.github.io">View source code</a></p>
+        </footer>
+    </main>
 </body>
 </html>
