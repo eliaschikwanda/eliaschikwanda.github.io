@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bare-Metal SD Card Driver - Elias Chikwanda</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Elias Chikwanda</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Elias Chikwanda</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-intro">
+        <div class="section__pic-container">
+            <img src="./assets/mmc-project.png" alt="MMC Project" class="project-pic"/>
+        </div>
+        <div class="section__text">
+            <h1 class="title">Bare-Metal SD Card Driver</h1>
+            <p class="section__text__p2">RISC-V Mango Pi Pro Implementation</p>
+            <div class="btn_container">
+                <button class="btn btn-color-2" onclick="window.open('https://github.com/eliaschikwanda/mango-pi-mmc')">
+                    View GitHub
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='index.html#projects'">
+                    Projects
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h1 class="title">Project Overview</h1>
+        <p class="section__text__p1">Technical implementation details</p>
+        <p>
+            Successfully ported Allwinner Technology's MMC (MultiMediaCard) protocol implementation 
+            from a working bootloader image to a bare-metal embedded system running on the Mango Pi 
+            Pro (Allwinner D1-H RISC-V processor). This project involved reverse-engineering hardware 
+            configurations, implementing low-level driver code, and debugging embedded systems issues.
+        </p>
+        <div class="section-container-proj">
+            <div class="about-containers">
+                    <div class="details-container">
+                        <h3>Lines of Code</h3>
+                        <p>~150 lines<br/>Core MMC functions implemented</p>
+                    </div>
+                    <div class="details-container">
+                        <h3>Hardware Config</h3>
+                        <p>6 GPIO pins<br/>5 registers configured</p>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h1 class="title">Technologies Used</h1>
+        <div class="tech-stack">
+            <span class="tech-tag">C Programming</span>
+            <span class="tech-tag">RISC-V Assembly</span>
+            <span class="tech-tag">Embedded Systems</span>
+            <span class="tech-tag">Hardware Debugging</span>
+            <span class="tech-tag">GPIO Configuration</span>
+            <span class="tech-tag">MMC/SD Protocol</span>
+            <span class="tech-tag">Allwinner D1-H SoC</span>
+            <span class="tech-tag">Bare-metal Programming</span>
+            <span class="tech-tag">System Integration</span>
+        </div>
+
+    </section>
+
+    <section id="projects">
+        <h1 class="title">Key Challenges & Solutions</h1>
+        <p class="section__text__p1">Problem-solving approach</p>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <h2 class="experience-sub-title project-title">GPIO Configuration Issue</h2>
+                    <div class="text-container">
+                        <p><strong>Problem:</strong> SD card was not being detected despite proper clock configuration.</p>
+                        <p><strong>Solution:</strong> Systematically compared GPIO pin configurations between working and non-working systems. Discovered pins PF0-PF5 were incorrectly configured for I2S2 audio (function 4) instead of SDC0 (function 2).</p>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <h2 class="experience-sub-title project-title">Clock Domain Setup</h2>
+                    <div class="text-container">
+                        <p><strong>Problem:</strong> SMHC0 controller was not receiving proper clock signals.</p>
+                        <p><strong>Solution:</strong> Reverse-engineered clock register values from working system (0x8200000b) and implemented proper CCU (Clock Control Unit) configuration.</p>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <h2 class="experience-sub-title project-title">HAL Dependencies</h2>
+                    <div class="text-container">
+                        <p><strong>Problem:</strong> Original MMC code relied on numerous utility functions not present in the target system.</p>
+                        <p><strong>Solution:</strong> Created custom util.c and util.h files implementing essential functions using RISC-V specific assembly for timer access, memory management, and cache operations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="title">Implementation Details</h1>
+        <p class="section__text__p1">Core code contributions</p>
+        <div class="contact-info-upper-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h3>MMC Write Functions</h3>
+                    <div class="text-container">
+                        <p>Implemented <code>mmc_write_blocks()</code> and <code>mmc_bwrite()</code> functions handling both single and multi-block write operations with proper command sequencing and error handling.</p>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h3>RISC-V Utilities</h3>
+                    <div class="text-container">
+                        <p>Created custom utility functions including 64-bit timer access using CSR instructions and cache management operations with RISC-V specific assembly.</p>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h3>Hardware Verification</h3>
+                    <div class="text-container">
+                        <p>Successfully verified functionality by writing "Elias Chikwanda" to block 1025 and confirming with dd command on macOS, proving reliable SD card read/write operations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright &#169; 2026 Elias Chikwanda. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
