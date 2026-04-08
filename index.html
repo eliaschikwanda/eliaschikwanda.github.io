@@ -13,9 +13,9 @@
             <h1>Elias Chikwanda</h1>
             <nav class="header-nav">
                 <a href="#projects">Projects</a>
-                <a href="#education">Education</a>
                 <a href="#coursework">Coursework</a>
-                <a href="assets/2025.7_elias_chikwanda_resume.pdf">Resume</a>
+                <a href="#skills">Skills</a>
+                <a href="assets/2025.7_elias_chikwanda_resume.pdf" target="_blank">Resume</a>
             </nav>
         </div>
     </header>
@@ -32,8 +32,8 @@
             <p class="sidebar-middle">Experience in Software Development and Hardware Engineering</p>
             
             <div class="sidebar-location">
-                📍 Stanford, CA<br>
-                🎓 Stanford University (EE CS '27)
+                Stanford, CA<br>
+                Stanford University · EE CS '27
             </div>
             
             <div class="sidebar-links">
@@ -84,8 +84,7 @@
                     robust backend architecture with JWT authentication and comprehensive API documentation.
                 </p>
                 <div class="project-links">
-                    <a href="https://github.com/eliaschikwanda/piilearn-web-frontend" target="_blank">GitHub</a>
-                    <!-- <a href="#" target="_blank">Live Demo</a> -->
+                    <a href="https://piilearn.com" target="_blank">piilearn.com</a>
                 </div>
             </div>
 
@@ -94,13 +93,29 @@
                 <div class="project-meta">Systems & Hardware Engineering • 2024</div>
                 <div class="project-tech">C, Assembly, Mango Pi (RISC-V), SPI, UART, I2C, BME280</div>
                 <p>
-                    Engineered 12 core system modules including gpio.c, timer.c, and malloc.c, enabling precise control 
-                    of Pi's peripherals and optimizing memory management • Designed and implemented a complete weather 
-                    station and automated drip irrigation system integrating BME280 sensor for environmental monitoring 
+                    Engineered 12 core system modules including gpio.c, timer.c, and malloc.c, enabling precise control
+                    of Pi's peripherals and optimizing memory management • Designed and implemented a complete weather
+                    station and automated drip irrigation system integrating BME280 sensor for environmental monitoring
                     and real-time soil moisture control, resulting in improved system performance and reliability.
                 </p>
                 <div class="project-links">
                     <a href="#" target="_blank">Code Available on Request</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-title">Bare-Metal SD Card Driver</div>
+                <div class="project-meta">Systems & Hardware Engineering • 2024</div>
+                <div class="project-tech">C, RISC-V Assembly, Mango Pi Pro (Allwinner D1-H), MMC/SD Protocol, GPIO</div>
+                <p>
+                    Ported Allwinner Technology's MMC protocol implementation from a working bootloader image to a
+                    bare-metal embedded system on the Mango Pi Pro • Reverse-engineered GPIO pin configurations and
+                    clock register values to bring up the SDC0 controller, and wrote ~150 lines of core MMC driver
+                    code along with custom RISC-V utilities for timer access and cache management • Verified end-to-end
+                    by writing and reading data blocks from a physical SD card.
+                </p>
+                <div class="project-links">
+                    <a href="mmc-port.html">Read More</a>
                 </div>
             </div>
 
@@ -138,35 +153,44 @@
 
         <section id="coursework" class="section">
             <h2>Relevant Coursework</h2>
-            
+
             <h3>Electrical Engineering</h3>
             <p>
-                <strong>EE108</strong> - Digital System Design<br>
-                <strong>EE101A</strong> - Circuits I<br>
-                <strong>EE102A</strong> - Signal and Systems I<br>
+                <strong>EE214B</strong> - Advanced Integrated Circuit Design<br>
+                <strong>EE214A</strong> - Analog Integrated Circuit Design<br>
+                <strong>EE217</strong> - Smartphone Sensors<br>
                 <strong>EE180</strong> - Digital Systems Architecture<br>
-                <strong>EE65</strong> - Modern Physics for Engineers<br>
-                <strong>EE101B</strong> - Circuits II
+                <strong>EE108</strong> - Digital System Design<br>
+                <strong>EE102A</strong> - Signals and Systems<br>
+                <strong>EE101B</strong> - Circuits II<br>
+                <strong>EE101A</strong> - Circuits I
             </p>
 
             <h3>Computer Science</h3>
             <p>
-                <strong>CS106B</strong> - Programming Abstractions<br>
-                <strong>CS107E</strong> - Computer Systems from the Ground Up<br>
-                <strong>CS103</strong> - Mathematical Foundations of Computing<br>
-                <strong>CS111</strong> - Operating Systems Principles<br>
-                <strong>CS109</strong> - Introduction to Probability for Computer Scientists
+                <strong>CS244C</strong> - Advanced Distributed Systems<br>
+                <strong>CS246</strong> - Mining Massive Data Sets<br>
+                <strong>CS229</strong> - Machine Learning<br>
+                <strong>MS&amp;E242</strong> - Machine Learning for Algorithmic Trading<br>
+                <strong>CS153</strong> - Frontier Systems<br>
+                <strong>CS144</strong> - Computer Networking<br>
+                <strong>CS131</strong> - Computer Vision: Foundations and Applications<br>
+                <strong>CS111</strong> - Operating Systems<br>
+                <strong>CS107E</strong> - Computer Systems<br>
+                <strong>CS161</strong> - Data Structures and Algorithms<br>
+                <strong>CS109</strong> - Probability<br>
+                <strong>CS103</strong> - Mathematical Logic
             </p>
 
             <h3>Mathematics</h3>
             <p>
-                <strong>Math 51</strong> - Linear Algebra, Multivariable Calculus, and Modern Applications<br>
-                <strong>Math 53</strong> - Differential Equations with Linear Algebra, Fourier Methods, and Modern Applications<br>
-                <strong>Math 104</strong> - Applied Matrix Theory
+                <strong>MATH104</strong> - Applied Matrix Theory<br>
+                <strong>MATH53</strong> - Differential Equations<br>
+                <strong>MATH51</strong> - Linear Algebra and Multivariable Calculus
             </p>
         </section>
 
-        <section class="section">
+        <section id="skills" class="section">
             <h2>Technical Skills</h2>
             <p>
                 <strong>Programming Languages:</strong> C/C++, Java, Python, TypeScript, JavaScript, SQL, Assembly (MIPS, RISC-V), Verilog, HTML, CSS<br>
